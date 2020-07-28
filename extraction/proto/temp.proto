@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package proto;
+
+message Request {
+    string body = 1;
+}
+
+message Response{
+    string body = 1;
+}
+
+message Files{
+    string fileName = 1;
+    bytes fileContent = 17;
+    string path = 2;
+    double checksum = 3;
+}
+
+message FileResponse{
+    string msg = 1;
+}
+
+message DownloadFileName{
+    string name = 1;
+}
+
+
+service CheckingServices{
+    rpc GetResponse(Request) returns (Response){}
+    rpc UploadFile (Files) returns (FileResponse){};
+    rpc DownloadFile (DownloadFileName) returns (Files){};
+}
