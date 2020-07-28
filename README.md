@@ -7,7 +7,7 @@ The implementation covers the specifications that enables any commercial compute
 > Warning: The local testnet is an experimental beta software. The repository is under development. Kindly use the release tag. The master branch is actively being upgraded to the latest features
 
 ## Prerequisites
-- OS X or Linux. Windows 10 Pro support is being tested.
+> OS X . Windows 10 Pro support is being tested. When the configurations are done we will update that in the release as well
 - [git](https://git-scm.com/)
 - [go lang v1.14+](https://golang.org/)
 - Docker. (Next Release)
