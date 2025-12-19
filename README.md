@@ -1,29 +1,54 @@
+<br />
+<p align="center">
+  <h3 align="center">Libonomy Light Client</h3>
 
+A resource-optimized client that verifies blockchain data with minimal requirements suitable for mobile and embedded systems.
 
-This repo contains the light node implementation of the libo coin on local testnet.
-The implementation covers the specifications that enables any commercial computer to be used for the validation purpose as well on the local testnet. Thereby making the light client implementation to be energy/resource efficient.
->Note: The initial release wont cover the layers of pools, security and network optimization stack. The current release will give the ability to do transactions of libocoin by utilizing libonomy CLI Wallet
+<b>Halt Status:</b> Testnet: In production
 
-> Warning: The local testnet is an experimental beta software. The repository is under development. Kindly use the release tag. The master branch is actively being upgraded to the latest features
+</p>
+
+## Getting Started
+
+Follow the instructions below to run the project locally.
 
 ## Prerequisites
-> OS X . Windows 10 Pro support is being tested. When the configurations are done we will update that in the release as well
-- [git](https://git-scm.com/)
-- [go lang v1.14+](https://golang.org/)
-- Docker. (Next Release)
+
+Make sure you have the following installed:
+
+- **GO**
+
+  Install GO from:
+
+  ```sh
+  https://go.dev/doc/install
+  ```
+
+  ⚠️ **Supported GO version:** `1.14.x`
 
 
-### Executing Transactions
+## Installation
 
-1. In the separate terminal run CLI Wallet of Libonomy.
+1. **Clone the repository**
 
-2. Using `set` command set/create the wallet with name
-3. `info` to view account balance
-4. `tx` for command line transactions
+2. **Navigate to the project directory**
 
+3. **Install dependencies**
 
-## Developers Community ?
-- Libonomy [discord community](https://libonomy.com/discord)
+```sh
+go mod tidy
+```
 
----
+### To make the build
+```sh
+make install
+```
 
+### For starting the build
+```sh
+./BUILD_NAME
+```
+
+```
+Copyright © 2025 — Libonomy
+```
